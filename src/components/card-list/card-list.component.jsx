@@ -1,12 +1,12 @@
 import Card from "../card/card.component";
-import "./card-list.styles.css";
+import { CardListContainer } from "./card-list.styles";
 
 const CardList = ({ pokemons }) => (
-  <div className="card-list">
+  <CardListContainer>
     {pokemons.map((pokemon) => {
       return <Card key={pokemon.id} pokemon={pokemon} />;
     })}
-  </div>
+  </CardListContainer>
 );
 
 export default CardList;

@@ -1,19 +1,19 @@
 import React from "react";
 
-import "./navbar.styles.css";
+import { NavbarContainer, NavbarList } from "./navbar.styles";
 
 const Navbar = () => {
   return (
-    <nav className="navbar">
-      <ul className="navbar-list">
+    <NavbarContainer>
+      <NavbarList>
         <li>
           <a href="/">Home</a>
         </li>
         <li>
           <a href="/documentation">Documentation</a>
         </li>
-      </ul>
-    </nav>
+      </NavbarList>
+    </NavbarContainer>
   );
 };
 

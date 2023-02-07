@@ -1,9 +1,11 @@
-img {
-  width: 20vw;
-  height: 40vh;
-}
+import styled from "styled-components";
 
-.card-container {
+export const CardContainer = styled.div`
+  img {
+    width: 20vw;
+    height: 40vh;
+  }
+
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -17,8 +19,8 @@ img {
   backface-visibility: hidden;
   transform: translateZ(0);
   transition: transform 0.25s ease-out;
-}
 
-.card-container:hover {
-  transform: scale(1.05);
-}
+  &:hover {
+    transform: scale(1.05);
+  }
+`;
