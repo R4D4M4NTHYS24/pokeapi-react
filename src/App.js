@@ -7,6 +7,7 @@ import Navbar from "./components/navbar/navbar.component";
 import logo from "./logo.svg";
 
 function App() {
+  //const [dataPokemon, setDataPokemon] = useState([]);
   const [searchField, setSearchField] = useState(""); //[value, setValue]
   const [pokemons, setPokemons] = useState([]);
   const [filteredPokemons, setFilterPokemons] = useState(pokemons);
@@ -22,7 +23,30 @@ function App() {
 
         const pokemons = await res.json();
 
+        // setDataPokemon(dataPokemon);
+
+        //console.log(data.results[0].name);
+
+        //console.log(pokemons.results[0].url);
+
+        function getPokemonId(element) {
+          let parts = element.split("/");
+
+          return parseInt(parts[parts.length - 2]);
+        }
+
+        for (let i = 0; i < pokemons.results.length; i++) {
+          pokemons.results[i] = {
+            id: getPokemonId(pokemons.results[i].url),
+            name: pokemons.results[i].name,
+            url: pokemons.results[i].url,
+          };
+        }
+
         setPokemons(pokemons.results);
+        console.log(pokemons.results);
+
+        //console.log(data.results);
 
         if (!res.ok) throw new Error(`conection API error status${res.status}`);
       } catch (err) {

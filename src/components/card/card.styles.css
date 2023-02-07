@@ -1,10 +1,17 @@
+img {
+  width: 20vw;
+  height: 40vh;
+}
+
 .card-container {
+  align-items: center;
   display: flex;
   flex-direction: column;
   background-color: #95dada;
   border: 1px solid grey;
   border-radius: 5px;
   padding: 25px;
+
   cursor: pointer;
   -moz-osx-font-smoothing: grayscale;
   backface-visibility: hidden;
