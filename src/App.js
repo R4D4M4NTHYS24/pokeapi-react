@@ -1,8 +1,10 @@
-import logo from "./logo.svg";
 import "./App.css";
 import React from "react";
 import { useEffect, useState } from "react";
-import SearchBox from "./components/search-box/search-box";
+import SearchBox from "./components/search-box/search-box.component";
+import CardList from "./components/card-list/card-list.component";
+import Navbar from "./components/navbar/navbar.component";
+import logo from "./logo.svg";
 
 function App() {
   const [searchField, setSearchField] = useState(""); //[value, setValue]
@@ -37,7 +39,7 @@ function App() {
     });
 
     setFilterPokemons(newFilteredPokemons);
-    console.log(newFilteredPokemons);
+    //console.log(newFilteredPokemons);
   }, [pokemons, searchField]);
 
   const onSearchChange = (ChangeEvent) => {
@@ -49,24 +51,15 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <SearchBox
-          className="search-box"
-          onChangeHandler={onSearchChange}
-          placeholder={"search pokemons"}
-        />
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <Navbar />
       </header>
+      <SearchBox
+        className="search-box"
+        onChangeHandler={onSearchChange}
+        placeholder={"search pokemons"}
+      />
+      <CardList pokemons={filteredPokemons} />
     </div>
   );
 }
