@@ -14,6 +14,7 @@ const Card = ({ pokemon }) => {
         alt={`pokemon ${name}`}
         src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${id}.svg`}
       />
+
       <h2>{name}</h2>
     </CardContainer>
   );

@@ -15,7 +15,6 @@ export const CardContainer = styled.div`
   border-radius: 5px;
   padding: 25px;
 
-  cursor: pointer;
   -moz-osx-font-smoothing: grayscale;
   backface-visibility: hidden;
   transform: translateZ(0);
