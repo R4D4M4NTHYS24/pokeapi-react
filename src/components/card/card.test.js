@@ -1,6 +1,6 @@
 import React from "react";
 import { render, screen } from "@testing-library/react";
-import Navbar from "./navbar.component";
+import Card from "./card.component";
 
 /*
 jest.mock("./search-box.styles.css", () => {
@@ -8,9 +8,9 @@ jest.mock("./search-box.styles.css", () => {
 });
 */
 
-describe("Navbar component", () => {
+describe("Card component", () => {
   it("should render correctly", () => {
-    const container = render(<Navbar />);
+    const container = render(<Card />);
     expect(render).toBeTruthy();
   });
 });

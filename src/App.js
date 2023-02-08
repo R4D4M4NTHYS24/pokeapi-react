@@ -45,7 +45,7 @@ function App() {
         }
 
         setPokemons(pokemons.results);
-        console.log(pokemons.results);
+        //console.log(pokemons.results);
 
         //console.log(data.results);
 

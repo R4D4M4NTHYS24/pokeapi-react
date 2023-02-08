@@ -6,6 +6,7 @@ export const CardContainer = styled.div`
     height: 40vh;
   }
 
+  height: 60vh;
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -25,6 +26,6 @@ export const CardContainer = styled.div`
   }
 
   @media screen and (max-width: 800px) {
-    height: 30vh;
+    height: 40vh;
   }
 `;
