@@ -7,10 +7,12 @@ const Navbar = () => {
     <NavbarContainer>
       <NavbarList>
         <li>
-          <a href="/">Home</a>
+          <a href="https://cv-camilo-restrepo.netlify.app/">About me</a>
         </li>
         <li>
-          <a href="/documentation">Documentation</a>
+          <a href="https://github.com/R4D4M4NTHYS24/pokeapi-react/blob/master/README.md">
+            Documentation
+          </a>
         </li>
       </NavbarList>
     </NavbarContainer>

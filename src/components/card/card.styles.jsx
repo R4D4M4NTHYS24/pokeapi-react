@@ -26,6 +26,10 @@ export const CardContainer = styled.div`
   }
 
   @media screen and (max-width: 800px) {
+    img {
+      width: 20vw;
+      height: 30vh;
+    }
     height: 40vh;
   }
 `;

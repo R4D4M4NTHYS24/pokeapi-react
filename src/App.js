@@ -26,7 +26,7 @@ function App() {
 
         // setDataPokemon(dataPokemon);
 
-        //console.log(data.results[0].name);
+        //console.log(pokemons.results.natural_gift_type);
 
         //console.log(pokemons.results[0].url);
 
@@ -85,6 +85,7 @@ function App() {
         onChangeHandler={onSearchChange}
         placeholder={"search pokemons"}
       />
+
       <CardList pokemons={filteredPokemons} />
     </div>
   );
