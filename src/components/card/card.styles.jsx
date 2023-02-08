@@ -23,4 +23,8 @@ export const CardContainer = styled.div`
   &:hover {
     transform: scale(1.05);
   }
+
+  @media screen and (max-width: 800px) {
+    height: 30vh;
+  }
 `;

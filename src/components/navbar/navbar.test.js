@@ -1,6 +1,6 @@
 import React from "react";
 import { render, screen } from "@testing-library/react";
-import SearchBox from "./search-box.component";
+import Navbar from "./navbar.component";
 
 /*
 jest.mock("./search-box.styles.css", () => {
@@ -10,7 +10,7 @@ jest.mock("./search-box.styles.css", () => {
 
 describe("SearchBox", () => {
   it("should render correctly", () => {
-    const container = render(<SearchBox />);
+    const container = render(<Navbar />);
     expect(render).toBeTruthy();
   });
 });

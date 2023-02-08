@@ -1,14 +1,12 @@
 import styled from "styled-components";
 
 export const NavbarContainer = styled.div`
-  .navbar {
-    display: block;
-  }
+  display: block;
 
-  margin: 0 2vw;
+  margin: 0 4vw;
 
   .navbar:link,
-  .navbar:visited {
+  &:visited {
     display: inline-block;
     text-decoration: none;
     color: #fff;
@@ -19,15 +17,17 @@ export const NavbarContainer = styled.div`
 `;
 
 export const NavbarList = styled.div`
-  .navbar-list {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    gap: 4.8rem;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+
+  a:hover,
+  a:active {
+    color: #000;
   }
 
-  &:hover,
-  &:active {
-    color: #000;
+  @media screen and (max-width: 800px) {
+    margin: 2vh 10vw;
   }
 `;

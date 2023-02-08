@@ -14,5 +14,8 @@ export const StyledInput = styled.input`
       outline: none;
       border-color: #aaa;
     }
+    @media screen and (max-width: 800px) {
+      margin: 2vh 10vw;
+    }
   }
 `;

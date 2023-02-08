@@ -1,16 +1,14 @@
 import React from "react";
 import { render, screen } from "@testing-library/react";
-import SearchBox from "./search-box.component";
+import Card from "./card.component";
 
-/*
-jest.mock("./search-box.styles.css", () => {
+jest.mock("id", () => {
   return jest.fn();
 });
-*/
 
 describe("SearchBox", () => {
   it("should render correctly", () => {
-    const container = render(<SearchBox />);
+    const container = render(<Card />);
     expect(render).toBeTruthy();
   });
 });

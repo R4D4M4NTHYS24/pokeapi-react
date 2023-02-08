@@ -5,6 +5,7 @@ import SearchBox from "./components/search-box/search-box.component";
 import CardList from "./components/card-list/card-list.component";
 import Navbar from "./components/navbar/navbar.component";
 import logo from "./logo.svg";
+import { GlobalStyle } from "./global.styles";
 
 function App() {
   //const [dataPokemon, setDataPokemon] = useState([]);
@@ -74,6 +75,7 @@ function App() {
 
   return (
     <div className="App">
+      <GlobalStyle />
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <Navbar />
