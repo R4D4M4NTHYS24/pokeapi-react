@@ -28,6 +28,6 @@ export const NavbarList = styled.div`
   }
 
   @media screen and (max-width: 800px) {
-    margin: 2vh 8vw;
+    margin: 2vh 3vw;
   }
 `;
